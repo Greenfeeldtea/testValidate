@@ -1,8 +1,12 @@
 <?php
 
-$bool = validate("()(())(()");
+$bool = validate("()(()))(()");
 var_dump($bool);
-
+if ($bool) {
+    echo "Строка верна";
+} else {
+    echo "Строка не верна";
+}
 function validate (string $str): bool {
     $stack = [];
 
